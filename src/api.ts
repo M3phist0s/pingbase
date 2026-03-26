@@ -506,7 +506,7 @@ function corsHeaders(): Record<string, string> {
 }
 
 // SSRF prevention: block private/internal hosts
-function isPrivateHost(host: string): boolean {
+export function isPrivateHost(host: string): boolean {
   // Strip IPv6 brackets
   const h = host.replace(/^\[|\]$/g, '');
   if (h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0' ||
