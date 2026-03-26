@@ -1,0 +1,37 @@
+name = "pingbase"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+# Cron triggers — runs every minute
+# The worker itself decides which monitors to check based on interval
+[triggers]
+crons = ["* * * * *"]
+
+# D1 database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "pingbase-db"
+database_id = "PLACEHOLDER_D1_ID"
+
+# KV namespace bindings
+[[kv_namespaces]]
+binding = "STATUS_KV"
+id = "PLACEHOLDER_STATUS_KV_ID"
+
+[[kv_namespaces]]
+binding = "BUFFER_KV"
+id = "PLACEHOLDER_BUFFER_KV_ID"
+
+[vars]
+ALERT_EMAIL_FROM = "alerts@pingbase.dev"
+APP_URL = "https://pingbase.dev"
+# RESEND_API_KEY set via wrangler secret
+# JWT_SECRET set via wrangler secret put JWT_SECRET
+#
+# Stripe secrets — set via wrangler secret put:
+#   wrangler secret put STRIPE_SECRET_KEY
+#   wrangler secret put STRIPE_WEBHOOK_SECRET
+#   wrangler secret put STRIPE_PRO_MONTHLY_PRICE
+#   wrangler secret put STRIPE_PRO_ANNUAL_PRICE
+#   wrangler secret put STRIPE_TEAM_MONTHLY_PRICE
+#   wrangler secret put STRIPE_TEAM_ANNUAL_PRICE
