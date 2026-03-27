@@ -2,6 +2,8 @@
 
 Uptime monitoring and status pages built on Cloudflare Workers. Fast, affordable, globally distributed.
 
+**[Landing Page](https://pingbase-landing.pages.dev/)** | **[Dashboard](https://pingbase-dashboard.pages.dev/)** | **[API Health](https://pingbase.pingbase-api.workers.dev/health)**
+
 ## Features
 
 - **Uptime Monitoring** — HTTP/HTTPS checks from Cloudflare's global edge network
