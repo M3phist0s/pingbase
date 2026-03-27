@@ -11,16 +11,16 @@ crons = ["* * * * *"]
 [[d1_databases]]
 binding = "DB"
 database_name = "pingbase-db"
-database_id = "PLACEHOLDER_D1_ID"
+database_id = "daae70d1-e4fe-4e48-b3c3-51f2e704e4b4"
 
 # KV namespace bindings
 [[kv_namespaces]]
 binding = "STATUS_KV"
-id = "PLACEHOLDER_STATUS_KV_ID"
+id = "e6e202d9a4fc46e0af000d7f4bf07086"
 
 [[kv_namespaces]]
 binding = "BUFFER_KV"
-id = "PLACEHOLDER_BUFFER_KV_ID"
+id = "bce4c41d62ec468db44a0f75c3d28871"
 
 [vars]
 ALERT_EMAIL_FROM = "alerts@pingbase.dev"
