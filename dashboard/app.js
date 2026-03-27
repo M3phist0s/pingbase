@@ -9,7 +9,7 @@
 
   // --------------- Config ---------------
 
-  var API_BASE = window.PINGBASE_API_BASE || '/api';
+  var API_BASE = window.PINGBASE_API_BASE || 'https://pingbase.pingbase-api.workers.dev/api';
   var REFRESH_INTERVAL = 30000; // 30 seconds
 
   // --------------- State ---------------
